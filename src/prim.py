@@ -3,11 +3,10 @@ import sys
 try:
     # for Python2
     from Tkinter import *
-    import tkFileDialog
 except ImportError:
     # for Python3
     from tkinter import *
-    import tkinter.tkFileDialog
+    import tkinter.filedialog
 
 root = Tk("PyEdit")
 text = Text(root) 
@@ -19,7 +18,7 @@ def saveAs():
 
     t = text.get("1.0", "end-1c")
 
-    savelocation = tkFileDialog.asksaveasfilename()
+    savelocation = tkinter.filedialog.asksaveasfilename()
 
     file1 = open(savelocation, "w+")
 
@@ -27,7 +26,7 @@ def saveAs():
 
     file1.close()
 
-button=Button(root, text="Save", command=saveAs) 
+button = Button(root, text="Save", command=saveAs) 
 button.grid()
 
 def fontHelvetica():
