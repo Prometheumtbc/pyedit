@@ -10,7 +10,6 @@ except ImportError:
 
 root = Tk("PyEdit")
 root.title("PyEdit")
-root.iconphoto()
 text = Text(root) 
 text.grid() 
 
