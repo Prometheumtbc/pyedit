@@ -9,6 +9,7 @@ except ImportError:
     import tkinter.filedialog
 
 root = Tk("PyEdit")
+root.title("PyEdit")
 text = Text(root) 
 text.grid() 
 
