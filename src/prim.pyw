@@ -27,6 +27,21 @@ def saveAs():
 button = Button(root, text="Save", command=saveAs) 
 button.grid()
 
+"""def load():
+
+    global text
+
+    t = text
+    loadlocation = tkinter.filedialog.askopenfilename()
+    file1 = open(loadlocation, "w+")
+
+    file2 = file1.read()
+    text.insert(file2)
+    file1.close()
+
+loadButton = Button(root, text="Load", command=load) 
+loadButton.grid()"""
+
 def fontHelvetica():
 
     global text
